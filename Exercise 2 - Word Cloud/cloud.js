@@ -1,6 +1,7 @@
 let paragraph = document.querySelector("#myParagraph")
 let paraText = paragraph.textContent.toLowerCase().split(" ")
 let paraObject = {}
+let cloud = document.querySelector("#myWordCloud")
 
 for(let i = 0; i < paraText.length; i++){
     if(paraObject.hasOwnProperty(paraText[i])){
@@ -16,11 +17,9 @@ let fiveCommon = Object.keys(Object.fromEntries(Object.entries(sortedPara).slice
 console.log(fiveCommon)
 
 
-let cloud = document.createElement("section")
-
 let one = document.createElement(p)
 one.setAttributes("class", "one")
-one.textContent = fiveCommon[0]
+one.textContent = String(fiveCommon[0])
 cloud.append(one)
 
 document.body.append(cloud)
