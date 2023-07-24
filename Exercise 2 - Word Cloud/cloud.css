@@ -2,3 +2,65 @@
     color: red;
     font-size: 64px;
 }
+
+
+.one{
+    font-size: 64px;
+    font-weight: 800;
+    color: green;
+}
+.two{
+    font-size: 60px;
+    font-weight: 800;
+    color: greenyellow;
+}
+.three{
+    font-size: 56px;
+    font-weight: 800;
+    color: red;
+}
+.four{
+    font-size: 52px;
+    font-weight: 800;
+    color: rebeccapurple;
+}
+.five{
+    font-size: 48px;
+    font-weight: 800;
+    color: blueviolet;
+}
+.six{
+    font-size: 44px;
+    font-weight: 800;
+    color: blueviolet;
+}
+.seven{
+    font-size: 40px;
+    font-weight: 800;
+    color: brown;
+}
+.eight{
+    font-size: 36px;
+    font-weight: 800;
+    color: burlywood;
+}
+.nine{
+    font-size: 32px;
+    font-weight: 800;
+    color: lightseagreen;
+}
+.ten{
+    font-size: 28px;
+    font-weight: 800;
+    color: seagreen;
+}
+.eleven{
+    font-size: 24px;
+    font-weight: 800;
+    color: slateblue;
+}
+.twelve{
+    font-size: 20px;
+    font-weight: 800;
+    color: saddlebrown;
+}
