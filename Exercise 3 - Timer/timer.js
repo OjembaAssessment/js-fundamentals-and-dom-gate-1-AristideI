@@ -4,46 +4,66 @@ let plus = document.querySelector(".plus")
 let reset = document.querySelector(".reset")
 let start = document.querySelector(".start")
 let stop = document.querySelector(".stop")
+let pro = 0
 
-let displayNum = 89
+let displayNum = 10
 display.textContent = displayNum
 
 plus.addEventListener("click", function(){
     displayNum++
     display.textContent = displayNum
 })
+
 minus.addEventListener("click", function(){
     displayNum--
     display.textContent = displayNum
 })
+
+
 
 start.addEventListener("click", function(){
     start.classList.toggle("hidden")
     stop.classList.toggle("hidden")
     counting()
     
-    
 })
 
-let counting = setInterval(function () {
+function counting(){
+    pro = setInterval(function () {
     if (displayNum === 0) {
-        stop()
+        reseter()
+        clearInterval(pro);
     }
     else {
         displayNum--
-        display.textContent = displayNum
     }
-    counter.textContent = countValue
-
+    display.textContent = displayNum
+    
 
 }, 1000)
+}
 
 stop.addEventListener("click", function(){
-     start.classList.toggle("hidden")
+    start.classList.toggle("hidden")
     stop.classList.toggle("hidden")
+    stopo()
 
 })
 
-function stop() {
-    clearInterval(counting)
+reset.addEventListener("click", function(){
+    reseter()
+})
+
+
+function stopo(){
+    clearInterval(pro)
 }
+
+function reseter(){
+    displayNum = 0
+    start.classList.remove("hidden")
+    stop.classList.add("hidden")
+    display.textContent = displayNum
+    clearInterval(pro);
+}
+
