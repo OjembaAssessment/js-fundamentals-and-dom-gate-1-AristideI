@@ -1,20 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="timer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gradient-to-tr from-gray-300 to-cyan-200 bg-cover  bg-no-repeat w-full h-[100vh]">
 
-    <h2>Exercise 3 - Timer</h2>
 
-    <div id="myTimer">
-        Your timer should go here!
-    </div>
+    <article class="w-2/3 mx-auto flex flex-col gap-8 mt-20">
 
-    <script src="./timer.js"></script>
 
+        <section class="flex items-center justify-between">
+
+            <button class="text-7xl font-bold border-2 border-blue-500 p-8 grid place-content-center minus">-</button>
+            <p class="text-5xl font-medium border-2 border-blue-500 px-36 py-12 grid place-content-center display">0</p>
+            <button class="text-7xl font-bold border-2 border-blue-500 p-8 grid place-content-center plus">+</button>
+
+        </section>
+
+
+        <section class="flex justify-between">
+            <button class="text-5xl border-2 border-blue-500 px-36 py-12 reset">Reset</button>
+            <button class="text-5xl border-2 border-blue-500 px-36 py-12 start">Start</button>
+            <button class="text-5xl border-2 border-blue-500 px-36 py-12 stop hidden">Stop</button>
+
+        </section>
+    </article>
+
+    <script src="timer.js"></script>
 </body>
 
 </html>
